@@ -8,6 +8,7 @@ import SignUp from './components/pages/SignUp'
 import Login from './components/pages/Login'
 import Request from './components/pages/Request'
 import Donate from './components/pages/Donate'
+import Dashboard from './components/dashboard/dashboard';
 function App() {
   return (
     <div className="App">
@@ -19,6 +20,7 @@ function App() {
         <Route path="/login" element={<Login></Login>}></Route>
         <Route path="/request" element={<Request></Request>}></Route>
         <Route path="/donate" element={<Donate></Donate>}></Route>
+        <Route path='/admin' element={<Dashboard></Dashboard>}></Route>
       </Routes>
       <Footer></Footer>
     </div>
